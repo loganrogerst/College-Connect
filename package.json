@@ -22,12 +22,10 @@
   "dependencies": {
     "express": "^4.4.5",
     "logfmt": "^1.1.2"
-  }
-
-}
-
-{
+  },
   "engines": {
     "node": "0.10.x"
   }
+
 }
+
