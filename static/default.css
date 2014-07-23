@@ -11,7 +11,7 @@ body
 	background: #2b2b2b;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 14pt;
-	font-weight: 300;
+	font-weight: 400;
 	color: #6c6c6c
 }
 
@@ -20,7 +20,7 @@ h1, h2, h3
 	margin: 0;
 	padding: 0;
 	font-weight: 600;
-	color: #454445;
+	color: #ffffff;
 }
 
 p, ol, ul
@@ -48,6 +48,17 @@ a
 	color: #2C383B;
 }
 
+button
+{
+	background-color: #8dc63f;
+	border-radius: 100px;
+	border-color: #8dc63f;
+	border-width: 0px;
+}
+
+.mybutton{
+	font-size: 1.4em;
+}
 a:hover
 {
 	text-decoration: none;
@@ -305,23 +316,23 @@ ul.contact li a.icon-rss:before
 	.button
 {
 	display: inline-block;
-	padding: 1.3em 3em;
-	background: #8dc63f;
-	-moz-transition: opacity 0.25s ease-in-out;
+	padding: 1.3em 1em;
+	background: #86bd3b;
+	/*-moz-transition: opacity 0.25s ease-in-out;
 	-webkit-transition: opacity 0.25s ease-in-out;
 	-o-transition: opacity 0.25s ease-in-out;
 	-ms-transition: opacity 0.25s ease-in-out;
-	transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out;*/
 	letter-spacing: 0.20em;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 600;
-	color: #FFF;
+	color: #86bd3b;
 }
 
 .button:hover
 {
-	background: #86bd3b;
+	color: #ffffff;
 }
 
 .button:active
@@ -333,6 +344,7 @@ ul.contact li a.icon-rss:before
 	padding: 1.6em 4em;
 	font-size: 1.4em;
 	font-weight: 900;
+	color:#CC33FF;
 }
 
 /*********************************************************************************/
@@ -364,7 +376,7 @@ ul.contact li a.icon-rss:before
 /* Header                                                                        */
 /*********************************************************************************/
 	
-#header-wrapper
+#header-back
 {
 	background: #2b2b2b;
 }
@@ -428,30 +440,44 @@ ul.contact li a.icon-rss:before
 /* Menu                                                                          */
 /*********************************************************************************/
 
-#menu
+.menu
 {
 	position: absolute;
 	right: 0;
-	top: 1.6em;
+	top: 1.7em;
 }
 
-#menu ul
+.menu li {
+	padding:1.0em;
+}
+.menu-two
+{
+	position: absolute;
+	right: 0;
+	top: 2.6em;
+}
+#padding
+{
+	top: 3.6em;
+}
+
+.menu ul
 {
 	display: inline-block;
 }
 
-#menu li
+.menu li
 {
 	display: block;
 	float: left;
 	text-align: center;
 }
 
-#menu li a, #menu li span
+.menu li a, .menu li span
 {
 	display: inline-block;
 	margin-left: 1px;
-	padding: 1em 1.5em 0em 1.5em;
+	padding:.8em;
 	letter-spacing: 0.10em;
 	text-decoration: none;
 	font-size: .91em;
@@ -460,14 +486,14 @@ ul.contact li a.icon-rss:before
 	color: #FFF;
 }
 
-#menu li:hover a, #menu li.active a, #menu li.active span
+.menu li:hover a, .menu li.active a, .menu li.active span
 {
 }
 
-#menu .current_page_item a
+.menu .current_page_item a
 {
 	color: #8dc63f;
-	font-size: 16px;
+	font-size: .91em;
 }
 
 /*********************************************************************************/
@@ -475,7 +501,7 @@ ul.contact li a.icon-rss:before
 /*********************************************************************************/
 	
 
-	#header-featured
+	#main-body
 	{
 		padding: 10em 0em;
 		background-image: url(images/banner.jpg);
@@ -484,10 +510,6 @@ ul.contact li a.icon-rss:before
 	}
 
 
-
-#banner-wrapper
-{
-}
 
 #banner
 {
@@ -500,7 +522,10 @@ ul.contact li a.icon-rss:before
 
 #banner a
 {
-	color: rgba(255,255,255,.9);
+	color: #ffffff;
+	background-color: #8dc63f;
+	border-radius: 50px;
+	font-size: 1.0em;
 }
 
 #banner h2
@@ -514,7 +539,6 @@ ul.contact li a.icon-rss:before
 #banner .button
 {
 	margin-top: 2em;
-	background: #6fac1b;
 }
 
 #banner strong
@@ -561,6 +585,12 @@ ul.contact li a.icon-rss:before
 {
 	padding: 0em 7em;
 }
+
+
+/*********************************************************************************/
+/* Singup Bar                                                                      */
+/*********************************************************************************/
+.Singup
 
 /*********************************************************************************/
 /* Sidebar                                                                       */
@@ -667,7 +697,7 @@ ul.contact li a.icon-rss:before
 	line-height: 3em;
 	font-size: 4em;
 	color: #8dc63f;
-	border: 1px solid #86bd3b;
+	border: 1px solid #	;
 	border-radius: 50%;
 }
 

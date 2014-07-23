@@ -1,0 +1,19 @@
+{
+  "name": "CollegeCONNECT",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+   "dependencies": {
+      "angular":"*",
+      "passport":"*",
+      "passport-local":"*"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
